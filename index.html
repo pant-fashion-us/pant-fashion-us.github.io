@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pant Fashion US | Women's Pants & Trousers Styling Guide</title>
+    <meta name="description" content="Discover curated women's pants outfit formulas, wide-leg trousers, chic casual street style, tailored office slacks, and timeless outfit inspiration.">
+
+    <!-- High Fashion Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-body: #F9F7F4;
+            --bg-card: #FFFFFF;
+            --bg-accent: #F4EFEB;
+            --text-primary: #18181B;
+            --text-secondary: #52525B;
+            --text-muted: #71717A;
+            --gold-accent: #C5A880;
+            --gold-dark: #9A7B56;
+            --gold-light: #FBF8F3;
+            --border-light: #EAE5DD;
+            --shadow-subtle: 0 4px 20px rgba(24, 24, 27, 0.05);
+            --shadow-hover: 0 16px 36px rgba(24, 24, 27, 0.1);
+            --radius-lg: 20px;
+            --radius-md: 14px;
+            --radius-pill: 9999px;
+            --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        * { box-sizing: border-box; }
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.75;
+            color: var(--text-primary);
+            background-color: var(--bg-body);
+            background-image: 
+                radial-gradient(var(--border-light) 0.8px, transparent 0.8px),
+                radial-gradient(rgba(197, 168, 128, 0.15) 0.8px, transparent 0.8px);
+            background-size: 28px 28px;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        #progress-container { position: fixed; top: 0; left: 0; width: 100%; height: 3px; z-index: 1001; }
+        #progress-bar { height: 100%; width: 0%; background: linear-gradient(90deg, var(--gold-accent), var(--gold-dark)); }
+
+        h1, h2, h3, h4 { font-family: 'Playfair Display', Georgia, serif; color: var(--text-primary); letter-spacing: -0.01em; }
+        .container { max-width: 800px; margin: 0 auto; padding: 0 24px; }
+
+        .top-nav {
+            padding: 16px 20px;
+            background: rgba(249, 247, 244, 0.94);
+            backdrop-filter: blur(14px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid var(--border-light);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+        }
+        .top-nav a {
+            color: var(--text-secondary);
+            font-size: 0.88rem;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 500;
+            padding: 7px 18px;
+            text-decoration: none;
+            cursor: pointer;
+            background-color: #FFFFFF;
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-pill);
+            transition: var(--transition);
+        }
+        .top-nav a:hover, .top-nav a.active {
+            background-color: var(--text-primary);
+            border-color: var(--text-primary);
+            color: #FFFFFF;
+            transform: translateY(-2px);
+        }
+
+        header { padding: 45px 0 25px; text-align: center; }
+        .brand-badge {
+            display: inline-flex;
+            background: var(--gold-light);
+            color: var(--gold-dark);
+            border: 1px solid rgba(197, 168, 128, 0.35);
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.78rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            padding: 5px 16px;
+            border-radius: var(--radius-pill);
+            margin-bottom: 14px;
+        }
+        header h1 { font-size: 3rem; margin: 0; cursor: pointer; }
+        header p { margin: 12px auto 0; font-size: 1.05rem; max-width: 580px; color: var(--text-secondary); }
+
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-lg);
+            padding: 36px;
+            margin: 30px 0;
+            box-shadow: var(--shadow-subtle);
+        }
+
+        .post-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            align-items: center;
+        }
+        .post-meta span { background: var(--bg-accent); padding: 4px 12px; border-radius: var(--radius-pill); color: var(--text-secondary); }
+
+        .hero-banner {
+            width: 100%;
+            height: 380px;
+            object-fit: cover;
+            border-radius: var(--radius-md);
+            margin-bottom: 25px;
+            background: #eae5dd;
+        }
+
+        .takeaways-box {
+            background: #F8FAFC;
+            border: 1px solid #DBE4EE;
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin: 28px 0;
+        }
+        .takeaways-box h3 { margin-top: 0; font-size: 1.35rem; color: #1E293B; border-left: 4px solid var(--gold-accent); padding-left: 12px; }
+
+        .highlight-quote {
+            background: var(--gold-light);
+            border-left: 4px solid var(--gold-dark);
+            padding: 16px 20px;
+            border-radius: 8px;
+            margin: 24px 0;
+            font-style: italic;
+            color: #4A3B2C;
+        }
+
+        .pro-tip {
+            background: #FFF7ED;
+            border: 1px solid #FED7AA;
+            padding: 16px 20px;
+            border-radius: 10px;
+            margin: 24px 0;
+            color: #9A3412;
+        }
+
+        .cta-box {
+            background: linear-gradient(135deg, #18181B, #27272A);
+            color: #FFFFFF;
+            padding: 32px;
+            border-radius: var(--radius-lg);
+            text-align: center;
+            margin: 40px 0;
+        }
+        .cta-box h3 { color: #FFFFFF; margin-top: 0; }
+        .cta-btn {
+            display: inline-block;
+            background: var(--gold-accent);
+            color: #18181B;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            padding: 12px 28px;
+            border-radius: var(--radius-pill);
+            text-decoration: none;
+            margin-top: 14px;
+            transition: var(--transition);
+        }
+        .cta-btn:hover { background: #FFFFFF; transform: translateY(-2px); }
+
+        .grid-posts {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .grid-item {
+            background: #FFF;
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        .grid-item:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+        .grid-item img { width: 100%; height: 200px; object-fit: cover; }
+        .grid-item .p-body { padding: 18px; }
+        .grid-item h4 { margin: 0 0 8px; font-size: 1.15rem; }
+
+        footer {
+            border-top: 1px solid var(--border-light);
+            background: #FFFFFF;
+            padding: 40px 20px;
+            text-align: center;
+            margin-top: 60px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+        footer a { color: var(--text-secondary); text-decoration: none; margin: 0 10px; cursor: pointer; }
+        footer a:hover { color: var(--gold-dark); }
+
+        @media (max-width: 640px) {
+            header h1 { font-size: 2.2rem; }
+            .card { padding: 22px; }
+            .hero-banner { height: 240px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="progress-container"><div id="progress-bar"></div></div>
+
+    <nav class="top-nav">
+        <a onclick="showView('home')">Home</a>
+        <a onclick="showView('page', 'about')">About Us</a>
+        <a onclick="showView('page', 'privacy')">Privacy Policy</a>
+        <a onclick="showView('page', 'terms')">Terms</a>
+        <a onclick="showView('page', 'contact')">Contact</a>
+    </nav>
+
+    <header>
+        <div class="container">
+            <div class="brand-badge">✨ Curated Pants & Trousers Edit</div>
+            <h1 onclick="showView('home')">Pant Fashion US</h1>
+            <p>Your definitive guide to effortless trousers, chic silhouette balance, relaxed streetwear, and timeless everyday pants outfits.</p>
+        </div>
+    </header>
+
+    <main class="container" id="app"></main>
+
+    <footer>
+        <div class="container">
+            <p><strong>Pant Fashion US</strong> · Curated with elegance for everyday style discovery.</p>
+            <p>
+                <a onclick="showView('home')">Home</a>
+                <a onclick="showView('page', 'about')">About Us</a>
+                <a onclick="showView('page', 'privacy')">Privacy Policy</a>
+                <a onclick="showView('page', 'terms')">Terms</a>
+                <a onclick="showView('page', 'contact')">Contact</a>
+            </p>
+            <p style="font-size: 0.8rem; margin-top: 15px;">© 2026 Pant Fashion US. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const featuredCollections = [
+            {
+                slug: "chic-wide-leg-trousers-outfit-ideas",
+                title: "Chic Wide-Leg Trousers Outfit Ideas for Effortless Street Style",
+                category: "Wide-Leg Trousers",
+                date: "October 2026",
+                img: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=800&q=80",
+                desc: "Discover how to balance proportions with flowing pleated wide-leg pants paired with sleek fitted tops."
+            },
+            {
+                slug: "casual-cargo-pants-streetwear-guide",
+                title: "How to Style Relaxed Cargo Pants for a Modern Elevated Look",
+                category: "Streetwear",
+                date: "October 2026",
+                img: "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80",
+                desc: "Upgrade utilitarian streetwear with tailored cuts, minimalist neutral palettes, and statement boots."
+            },
+            {
+                slug: "tailored-office-slacks-smart-casual",
+                title: "Tailored Slacks: Transitioning from Boardroom to Evening Drinks",
+                category: "Smart Casual",
+                date: "October 2026",
+                img: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80",
+                desc: "The ultimate guide to structured high-rise trousers with blazers, crop knits, and comfortable loafers."
+            }
+        ];
+
+        function cleanTitleFromSlug(slug) {
+            if (!slug) return "Chic Everyday Women's Pants Outfit Guide";
+            return slug.split('-')
+                .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+                .join(' ');
+        }
+
+        function showView(type, param) {
+            const app = document.getElementById('app');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+
+            if (type === 'home') {
+                history.pushState(null, '', window.location.pathname);
+                renderHome();
+            } else if (type === 'post') {
+                history.pushState(null, '', `?id=${param}`);
+                renderPost(param);
+            } else if (type === 'page') {
+                renderStaticPage(param);
+            }
+        }
+
+        function renderHome() {
+            const app = document.getElementById('app');
+            let cards = featuredCollections.map(p => `
+                <div class="grid-item" onclick="showView('post', '${p.slug}')">
+                    <img src="${p.img}" alt="${p.title}" loading="lazy">
+                    <div class="p-body">
+                        <span style="font-size: 0.75rem; color: var(--gold-dark); text-transform: uppercase; font-weight: 600;">${p.category}</span>
+                        <h4>${p.title}</h4>
+                        <p style="font-size: 0.88rem; color: var(--text-secondary); margin: 0;">${p.desc}</p>
+                    </div>
+                </div>
+            `).join('');
+
+            app.innerHTML = `
+                <div class="card" style="text-align: center;">
+                    <h2 style="font-size: 2.2rem; margin-top: 0;">Curated Women's Pants Lookbook</h2>
+                    <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto 20px;">Explore timeless styling formulas, seasonal trouser silhouettes, and masterclasses in everyday wardrobe proportion.</p>
+                </div>
+                <h3 style="font-size: 1.6rem; margin-bottom: 15px;">Trending Outfit Inspirations</h3>
+                <div class="grid-posts">${cards}</div>
+            `;
+        }
+
+        function renderPost(slug) {
+            const app = document.getElementById('app');
+            const title = cleanTitleFromSlug(slug);
+            const found = featuredCollections.find(p => p.slug === slug);
+            const banner = found ? found.img : "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=900&q=80";
+
+            app.innerHTML = `
+                <article class="card">
+                    <div class="post-meta">
+                        <span>Pants & Trousers</span>
+                        <span>⏱️ 5 min read</span>
+                        <span>✨ Trending Edit</span>
+                    </div>
+
+                    <h1 style="font-size: 2.4rem; line-height: 1.25; margin-bottom: 20px;">${title}</h1>
+                    <img src="${banner}" alt="${title}" class="hero-banner">
+
+                    <p>Modern fashion has proven that a well-crafted pair of trousers forms the undisputed foundation of every impactful outfit. Whether navigating brisk morning errands or curating an elevated evening statement, styling your pants with intentional volume, thoughtful layering, and balanced accessories creates an effortlessly refined look.</p>
+
+                    <div class="takeaways-box">
+                        <h3>Key Styling Takeaways</h3>
+                        <ul style="margin: 0; padding-left: 20px; line-height: 1.8;">
+                            <li><strong>Volume Balance:</strong> When styling loose or wide-leg trousers, maintain equilibrium by choosing fitted or cropped tops.</li>
+                            <li><strong>Waist Definition:</strong> High-rise waistlines anchor the silhouette and elongate your vertical line.</li>
+                            <li><strong>Shoe Harmony:</strong> Pointed-toe booties, retro sneakers, or minimal slide loafers immediately dictate the mood.</li>
+                            <li><strong>Color Palette:</strong> Neutral hues like ivory, espresso, charcoal, and warm camel offer maximum versatility.</li>
+                        </ul>
+                    </div>
+
+                    <h2>1. Mastering Proportions & Silhouette</h2>
+                    <p>The secret to modern street style lies in contrast. Voluminous, fluid fabrics break gracefully over chunky platform sneakers or tailored heels, creating an elongated line that flatters without feeling restrictive.</p>
+
+                    <div class="highlight-quote">
+                        "Elegance is not about being noticed, it's about being remembered. A great pair of tailored trousers speaks with quiet confidence."
+                    </div>
+
+                    <h2>2. Layering for Effortless Versatility</h2>
+                    <p>Transition from daylight brunch to late dinners seamlessly by introducing adaptable outerwear. Layering an oversized blazer, cropped utility jacket, or relaxed trench coat elevates casual pants into an intentional fashion statement.</p>
+
+                    <div class="pro-tip">
+                        <strong>💡 Stylist Pro Tip:</strong> Always pay attention to the hem break. A slight puddle hem creates a relaxed downtown aesthetic, while a clean ankle crop keeps office looks sharp.
+                    </div>
+
+                    <div class="cta-box">
+                        <h3>Looking for More Outfit Formulas?</h3>
+                        <p>Save this idea to your Pinterest board and explore our curated styling library.</p>
+                        <a onclick="showView('home')" class="cta-btn">Explore More Outfits</a>
+                    </div>
+                </article>
+            `;
+        }
+
+        function renderStaticPage(page) {
+            const app = document.getElementById('app');
+            let content = '';
+
+            if (page === 'about') {
+                content = `
+                    <h1>About Pant Fashion US</h1>
+                    <p>Welcome to Pant Fashion US! We are an editorial fashion discovery hub dedicated to helping modern women curate versatile, elegant, and timeless outfits centered around trousers, denim, and pants.</p>
+                    <p>Our mission is to celebrate personal style through thoughtful proportion, wearable luxury, and effortless daily inspiration.</p>
+                `;
+            } else if (page === 'privacy') {
+                content = `
+                    <h1>Privacy Policy</h1>
+                    <p>At Pant Fashion US, we respect your privacy. We do not sell or trade personal information to third parties. Our website collects non-personally identifiable analytical data strictly to optimize user browsing experience.</p>
+                    <p>Third-party partners and analytics may use standard cookies to analyze trends and visitor interactions.</p>
+                `;
+            } else if (page === 'terms') {
+                content = `
+                    <h1>Terms of Service</h1>
+                    <p>By accessing Pant Fashion US, you agree to our terms and conditions. All content, imagery curation, and editorial styling advice provided on this website are for informational and inspirational purposes only.</p>
+                `;
+            } else if (page === 'contact') {
+                content = `
+                    <h1>Contact Us</h1>
+                    <p>Have questions, styling suggestions, or partnership inquiries? We'd love to hear from you!</p>
+                    <p><strong>Email:</strong> contact@pantfashionus.com</p>
+                    <p><strong>Location:</strong> New York, NY - United States</p>
+                `;
+            }
+
+            app.innerHTML = `<div class="card">${content}</div>`;
+        }
+
+        // Reading Progress
+        window.addEventListener('scroll', () => {
+            const h = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (window.scrollY / h) * 100;
+            document.getElementById('progress-bar').style.width = scrolled + '%';
+        });
+
+        // Initialize from URL
+        window.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const id = params.get('id');
+            if (id) {
+                renderPost(id);
+            } else {
+                renderHome();
+            }
+        });
+    </script>
+</body>
+</html>
