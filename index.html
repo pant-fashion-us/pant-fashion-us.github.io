@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pant Fashion US | Women's Pants & Trousers Styling Guide</title>
-    <meta name="description" content="Discover curated women's pants outfit formulas, wide-leg trousers, chic casual street style, tailored office slacks, and timeless outfit inspiration.">
+    <title>Women Pants Outfits | Modern Trousers & Everyday Street Style</title>
+    <meta name="description" content="Discover curated women pants outfit ideas, wide-leg trousers styling, relaxed cargos, tailored office slacks, and effortless everyday street style inspiration.">
 
-    <!-- High Fashion Fonts -->
+    <!-- High Fashion Editorial Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <style>
+        /* Modern High-End Fashion Editorial Design System */
         :root {
             --bg-body: #F9F7F4;
             --bg-card: #FFFFFF;
@@ -23,6 +25,7 @@
             --gold-dark: #9A7B56;
             --gold-light: #FBF8F3;
             --border-light: #EAE5DD;
+            --border-card: rgba(197, 168, 128, 0.28);
             --shadow-subtle: 0 4px 20px rgba(24, 24, 27, 0.05);
             --shadow-hover: 0 16px 36px rgba(24, 24, 27, 0.1);
             --radius-lg: 20px;
@@ -32,6 +35,7 @@
         }
 
         * { box-sizing: border-box; }
+
         body {
             font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
             line-height: 1.75;
@@ -41,19 +45,44 @@
                 radial-gradient(var(--border-light) 0.8px, transparent 0.8px),
                 radial-gradient(rgba(197, 168, 128, 0.15) 0.8px, transparent 0.8px);
             background-size: 28px 28px;
+            background-position: 0 0, 14px 14px;
             margin: 0;
             padding: 0;
             -webkit-font-smoothing: antialiased;
         }
 
-        #progress-container { position: fixed; top: 0; left: 0; width: 100%; height: 3px; z-index: 1001; }
-        #progress-bar { height: 100%; width: 0%; background: linear-gradient(90deg, var(--gold-accent), var(--gold-dark)); }
+        #progress-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: transparent;
+            z-index: 1001;
+        }
 
-        h1, h2, h3, h4 { font-family: 'Playfair Display', Georgia, serif; color: var(--text-primary); letter-spacing: -0.01em; }
-        .container { max-width: 800px; margin: 0 auto; padding: 0 24px; }
+        #progress-bar {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, var(--gold-accent), var(--gold-dark));
+            transition: width 0.1s ease;
+        }
+
+        h1, h2, h3, h4, .brand-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            color: var(--text-primary);
+            letter-spacing: -0.01em;
+        }
+
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
 
         .top-nav {
             padding: 16px 20px;
+            text-align: center;
             background: rgba(249, 247, 244, 0.94);
             backdrop-filter: blur(14px);
             position: sticky;
@@ -63,367 +92,743 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 12px;
+            align-items: center;
+            gap: 10px;
         }
+
         .top-nav a {
             color: var(--text-secondary);
-            font-size: 0.88rem;
+            font-size: 0.9rem;
             font-family: 'Outfit', sans-serif;
             font-weight: 500;
-            padding: 7px 18px;
+            padding: 8px 18px;
             text-decoration: none;
+            transition: var(--transition);
             cursor: pointer;
             background-color: #FFFFFF;
             border: 1px solid var(--border-light);
             border-radius: var(--radius-pill);
-            transition: var(--transition);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
         }
+
         .top-nav a:hover, .top-nav a.active {
             background-color: var(--text-primary);
             border-color: var(--text-primary);
             color: #FFFFFF;
             transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(24, 24, 27, 0.12);
         }
 
-        header { padding: 45px 0 25px; text-align: center; }
+        header {
+            padding: 55px 0 35px;
+            text-align: center;
+        }
+
         .brand-badge {
             display: inline-flex;
+            align-items: center;
+            gap: 6px;
             background: var(--gold-light);
             color: var(--gold-dark);
             border: 1px solid rgba(197, 168, 128, 0.35);
             font-family: 'Outfit', sans-serif;
-            font-size: 0.78rem;
+            font-size: 0.8rem;
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 1.5px;
             padding: 5px 16px;
             border-radius: var(--radius-pill);
-            margin-bottom: 14px;
-        }
-        header h1 { font-size: 3rem; margin: 0; cursor: pointer; }
-        header p { margin: 12px auto 0; font-size: 1.05rem; max-width: 580px; color: var(--text-secondary); }
-
-        .card {
-            background: var(--bg-card);
-            border: 1px solid var(--border-light);
-            border-radius: var(--radius-lg);
-            padding: 36px;
-            margin: 30px 0;
-            box-shadow: var(--shadow-subtle);
+            margin-bottom: 16px;
         }
 
-        .post-meta {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 14px;
-            font-family: 'Outfit', sans-serif;
-            font-size: 0.85rem;
-            color: var(--text-muted);
-            margin-bottom: 20px;
-            align-items: center;
-        }
-        .post-meta span { background: var(--bg-accent); padding: 4px 12px; border-radius: var(--radius-pill); color: var(--text-secondary); }
-
-        .hero-banner {
-            width: 100%;
-            height: 380px;
-            object-fit: cover;
-            border-radius: var(--radius-md);
-            margin-bottom: 25px;
-            background: #eae5dd;
-        }
-
-        .takeaways-box {
-            background: #F8FAFC;
-            border: 1px solid #DBE4EE;
-            border-radius: 12px;
-            padding: 20px 24px;
-            margin: 28px 0;
-        }
-        .takeaways-box h3 { margin-top: 0; font-size: 1.35rem; color: #1E293B; border-left: 4px solid var(--gold-accent); padding-left: 12px; }
-
-        .highlight-quote {
-            background: var(--gold-light);
-            border-left: 4px solid var(--gold-dark);
-            padding: 16px 20px;
-            border-radius: 8px;
-            margin: 24px 0;
-            font-style: italic;
-            color: #4A3B2C;
-        }
-
-        .pro-tip {
-            background: #FFF7ED;
-            border: 1px solid #FED7AA;
-            padding: 16px 20px;
-            border-radius: 10px;
-            margin: 24px 0;
-            color: #9A3412;
-        }
-
-        .cta-box {
-            background: linear-gradient(135deg, #18181B, #27272A);
-            color: #FFFFFF;
-            padding: 32px;
-            border-radius: var(--radius-lg);
-            text-align: center;
-            margin: 40px 0;
-        }
-        .cta-box h3 { color: #FFFFFF; margin-top: 0; }
-        .cta-btn {
-            display: inline-block;
-            background: var(--gold-accent);
-            color: #18181B;
-            font-family: 'Outfit', sans-serif;
-            font-weight: 600;
-            padding: 12px 28px;
-            border-radius: var(--radius-pill);
-            text-decoration: none;
-            margin-top: 14px;
-            transition: var(--transition);
-        }
-        .cta-btn:hover { background: #FFFFFF; transform: translateY(-2px); }
-
-        .grid-posts {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 20px;
-            margin: 30px 0;
-        }
-        .grid-item {
-            background: #FFF;
-            border: 1px solid var(--border-light);
-            border-radius: var(--radius-md);
-            overflow: hidden;
+        header h1 {
+            margin: 0;
+            font-size: 3.4rem;
+            font-weight: 700;
+            line-height: 1.15;
+            color: var(--text-primary);
             cursor: pointer;
             transition: var(--transition);
         }
-        .grid-item:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
-        .grid-item img { width: 100%; height: 200px; object-fit: cover; }
-        .grid-item .p-body { padding: 18px; }
-        .grid-item h4 { margin: 0 0 8px; font-size: 1.15rem; }
 
-        footer {
-            border-top: 1px solid var(--border-light);
+        header h1:hover { color: var(--gold-dark); }
+
+        header p {
+            margin: 14px auto 0;
+            font-size: 1.12rem;
+            max-width: 580px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .filter-wrapper {
+            margin: 30px 0 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            align-items: center;
+        }
+
+        .category-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+        }
+
+        .cat-pill {
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.86rem;
+            font-weight: 500;
+            padding: 6px 16px;
+            border-radius: var(--radius-pill);
             background: #FFFFFF;
-            padding: 40px 20px;
-            text-align: center;
-            margin-top: 60px;
+            border: 1px solid var(--border-light);
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .cat-pill:hover, .cat-pill.active {
+            background: var(--text-primary);
+            color: #FFFFFF;
+            border-color: var(--text-primary);
+        }
+
+        .search-box {
+            position: relative;
+            width: 100%;
+            max-width: 440px;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 10px 18px 10px 38px;
+            border-radius: var(--radius-pill);
+            border: 1px solid var(--border-light);
+            background: #FFFFFF;
+            font-family: 'Plus Jakarta Sans', sans-serif;
             font-size: 0.9rem;
+            color: var(--text-primary);
+            outline: none;
+            transition: var(--transition);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+        }
+
+        .search-box input:focus {
+            border-color: var(--gold-accent);
+            box-shadow: 0 0 0 3px rgba(197, 168, 128, 0.2);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .post-card, .single-post {
+            background: var(--bg-card);
+            margin-bottom: 50px;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-subtle);
+            border: 1px solid var(--border-card);
+            transition: var(--transition);
+            cursor: pointer;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .post-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-hover);
+            border-color: rgba(197, 168, 128, 0.6);
+        }
+
+        .single-post {
+            cursor: default;
+            margin-bottom: 40px;
+        }
+
+        .post-header {
+            padding: 18px 28px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            background: #FFFFFF;
+        }
+
+        .author-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .post-header img.avatar {
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            border: 2px solid var(--gold-accent);
+            padding: 1px;
+            object-fit: cover;
+            box-shadow: 0 2px 8px rgba(197, 168, 128, 0.2);
+        }
+
+        .author-text .username {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            font-family: 'Outfit', sans-serif;
+            display: block;
+        }
+
+        .author-text .post-meta-sub {
+            font-size: 0.8rem;
             color: var(--text-muted);
         }
-        footer a { color: var(--text-secondary); text-decoration: none; margin: 0 10px; cursor: pointer; }
-        footer a:hover { color: var(--gold-dark); }
+
+        .category-tag-badge {
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.78rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            padding: 4px 12px;
+            background: var(--gold-light);
+            color: var(--gold-dark);
+            border-radius: var(--radius-pill);
+            border: 1px solid rgba(197, 168, 128, 0.3);
+        }
+
+        .image-wrapper {
+            position: relative;
+            overflow: hidden;
+            background: #F4EFEB;
+            max-height: 520px;
+        }
+
+        .post-image {
+            width: 100%;
+            height: 100%;
+            max-height: 520px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .post-card:hover .post-image { transform: scale(1.025); }
+
+        .post-content { padding: 32px 32px 20px; }
+        .post-content h2 {
+            margin: 0 0 16px;
+            font-size: 2rem;
+            line-height: 1.3;
+            color: var(--text-primary);
+            transition: color 0.2s ease;
+        }
+        .post-card:hover .post-content h2 { color: var(--gold-dark); }
+
+        .post-content p.excerpt-text {
+            color: var(--text-secondary);
+            font-size: 1.02rem;
+            line-height: 1.7;
+            margin-bottom: 20px;
+            white-space: pre-line;
+        }
+
+        .post-footer {
+            padding: 16px 32px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            font-family: 'Outfit', sans-serif;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid var(--border-light);
+            background: #FAFAFA;
+        }
+
+        .post-actions {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .action-btn {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            padding: 4px 8px;
+            border-radius: var(--radius-pill);
+            transition: var(--transition);
+            font-family: 'Outfit', sans-serif;
+        }
+        .action-btn:hover { color: var(--text-primary); background: rgba(0, 0, 0, 0.04); }
+        .action-btn.liked { color: #E11D48; }
+
+        .single-post-title {
+            font-size: 2.6rem;
+            line-height: 1.25;
+            margin: 0 0 20px;
+            color: var(--text-primary);
+        }
+
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.85rem;
+            font-family: 'Outfit', sans-serif;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+        .breadcrumb a { color: var(--gold-dark); text-decoration: none; cursor: pointer; }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 25px;
+            color: var(--text-primary);
+            background-color: #FFFFFF;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 600;
+            padding: 10px 22px;
+            border-radius: var(--radius-pill);
+            border: 1px solid var(--border-light);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        .back-button:hover {
+            background-color: var(--text-primary);
+            color: #FFFFFF;
+            transform: translateX(-4px);
+        }
+
+        .share-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 24px;
+            margin: 30px 0;
+            background: var(--bg-accent);
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-card);
+        }
+        .share-buttons { display: flex; gap: 10px; }
+        .share-pill {
+            padding: 6px 14px;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.85rem;
+            border-radius: var(--radius-pill);
+            background: #FFFFFF;
+            border: 1px solid var(--border-light);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        .share-pill:hover { background: var(--text-primary); color: #FFF; }
+
+        .newsletter-card {
+            background: linear-gradient(135deg, #242220 0%, #151413 100%);
+            color: #FFFFFF;
+            border-radius: var(--radius-lg);
+            padding: 40px 32px;
+            margin: 60px 0 40px;
+            text-align: center;
+        }
+        .newsletter-card h3 { color: #FFF; margin: 0 0 10px; font-size: 1.8rem; }
+        .newsletter-card p { color: #D1D5DB; font-size: 0.98rem; max-width: 480px; margin: 0 auto 24px; }
+        .newsletter-form { display: flex; gap: 10px; max-width: 440px; margin: 0 auto; }
+        .newsletter-form input {
+            flex: 1;
+            padding: 12px 18px;
+            border-radius: var(--radius-pill);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.1);
+            color: #FFFFFF;
+            outline: none;
+        }
+        .newsletter-form button {
+            padding: 12px 24px;
+            background: var(--gold-accent);
+            color: #18181B;
+            border: none;
+            border-radius: var(--radius-pill);
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        #toast {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            background: #18181B;
+            color: #FFFFFF;
+            padding: 12px 22px;
+            border-radius: var(--radius-pill);
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.9rem;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            z-index: 2000;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: var(--transition);
+            pointer-events: none;
+        }
+        #toast.show { opacity: 1; transform: translateY(0); }
+
+        footer.site-footer {
+            padding: 40px 20px 50px;
+            text-align: center;
+            border-top: 1px solid var(--border-light);
+            background: #FFFFFF;
+            margin-top: 60px;
+        }
+        .footer-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 18px;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+        }
+        .footer-links a { color: var(--text-muted); text-decoration: none; font-size: 0.88rem; cursor: pointer; }
+        .footer-links a:hover { color: var(--gold-dark); }
+        .footer-copy { color: var(--text-muted); font-size: 0.82rem; }
 
         @media (max-width: 640px) {
-            header h1 { font-size: 2.2rem; }
-            .card { padding: 22px; }
-            .hero-banner { height: 240px; }
+            header h1 { font-size: 2.4rem; }
+            .post-content { padding: 24px 20px 16px; }
+            .post-header { padding: 16px 20px; }
+            .post-footer { padding: 14px 20px; }
+            .newsletter-form { flex-direction: column; }
+            .share-bar { flex-direction: column; gap: 14px; text-align: center; }
         }
     </style>
 </head>
-<body>
 
+<body>
     <div id="progress-container"><div id="progress-bar"></div></div>
 
     <nav class="top-nav">
-        <a onclick="showView('home')">Home</a>
-        <a onclick="showView('page', 'about')">About Us</a>
-        <a onclick="showView('page', 'privacy')">Privacy Policy</a>
-        <a onclick="showView('page', 'terms')">Terms</a>
-        <a onclick="showView('page', 'contact')">Contact</a>
+        <a onclick="navigate('home')">Home</a>
+        <a onclick="navigate('page', 'about')">About Us</a>
+        <a onclick="navigate('page', 'privacy')">Privacy Policy</a>
+        <a onclick="navigate('page', 'terms')">Terms</a>
+        <a onclick="navigate('page', 'contact')">Contact</a>
     </nav>
 
     <header>
         <div class="container">
             <div class="brand-badge">✨ Curated Pants & Trousers Edit</div>
-            <h1 onclick="showView('home')">Pant Fashion US</h1>
-            <p>Your definitive guide to effortless trousers, chic silhouette balance, relaxed streetwear, and timeless everyday pants outfits.</p>
+            <h1 onclick="navigate('home')">Women Pants Outfit</h1>
+            <p>Your definitive guide to modern trouser silhouettes, effortless layering formulas, relaxed wide-leg cuts, and contemporary everyday street style.</p>
         </div>
     </header>
 
     <main class="container" id="app"></main>
 
-    <footer>
-        <div class="container">
-            <p><strong>Pant Fashion US</strong> · Curated with elegance for everyday style discovery.</p>
-            <p>
-                <a onclick="showView('home')">Home</a>
-                <a onclick="showView('page', 'about')">About Us</a>
-                <a onclick="showView('page', 'privacy')">Privacy Policy</a>
-                <a onclick="showView('page', 'terms')">Terms</a>
-                <a onclick="showView('page', 'contact')">Contact</a>
-            </p>
-            <p style="font-size: 0.8rem; margin-top: 15px;">© 2026 Pant Fashion US. All rights reserved.</p>
+    <div id="toast">Saved to your style board!</div>
+
+    <footer class="site-footer">
+        <div class="footer-logo">Women Pants Outfit</div>
+        <div class="footer-links">
+            <a onclick="navigate('home')">Home</a>
+            <a onclick="navigate('page', 'about')">About Us</a>
+            <a onclick="navigate('page', 'privacy')">Privacy Policy</a>
+            <a onclick="navigate('page', 'terms')">Terms of Service</a>
+            <a onclick="navigate('page', 'contact')">Contact</a>
         </div>
+        <p class="footer-copy">© 2026 Women Pants Outfit · Curated with ♥ for timeless elegance and effortless street style.</p>
     </footer>
 
     <script>
-        const featuredCollections = [
+        const posts = [
             {
-                slug: "chic-wide-leg-trousers-outfit-ideas",
-                title: "Chic Wide-Leg Trousers Outfit Ideas for Effortless Street Style",
+                id: "casual-wide-leg-pants-outfit-ideas",
+                title: "Casual Wide-Leg Pants Outfit Ideas for Everyday Chic Street Style",
+                date: "October 14, 2026",
+                image: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=1200&q=80",
                 category: "Wide-Leg Trousers",
-                date: "October 2026",
-                img: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=800&q=80",
-                desc: "Discover how to balance proportions with flowing pleated wide-leg pants paired with sleek fitted tops."
+                readTime: "8 min read",
+                likes: "1.4k",
+                excerpt: "Upgrade your daily street style with these effortless wide-leg trouser formulas! ✨ Whether you prefer a tailored pleated high-rise look or relaxed fluid drape, these looks make transitional dressing completely foolproof.\n\n• Pair oversized trousers with a crisp white crop top and retro neutral sneakers.\n• Layer a cozy knit sweater over your shoulders when temperatures drop.\n\nSave for later to curate your ultimate cool-girl wardrobe rotation! 🖤 #WideLegPants #StreetStyleInspo #TrousersLook #CasualOOTD #EverydayFashion",
+                content: `<p>Street style has entered an era where comfort and high-impact visual edge no longer compete against one another. At the heart of this modern sartorial shift sits the wide-leg trouser, an iconic staple that has transitioned from boardroom utility to runway darling and, finally, into the everyday wardrobe of tastemakers worldwide.</p>
+                <div style="background:#f8fafc;border:1px solid #dbe4ee;border-radius:12px;padding:18px 20px;margin:24px 0;">
+                  <h3 style="margin-top:0;margin-bottom:12px;font-size:24px;line-height:1.4;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #C5A880;">Key Takeaways</h3>
+                  <ul style="margin:0;padding-left:20px;">
+                    <li>High-rise wide-leg pants provide the ideal blend of structure and relaxed volume.</li>
+                    <li>Pairing voluminous trousers with floor-pooling hem cuts creates the modern puddle silhouette.</li>
+                    <li>Cropped basic tees balance high-waisted bottoms and highlight natural proportions.</li>
+                    <li>Transition effortlessly from daytime coffee runs to evening dinners by adding pointed-toe heels.</li>
+                  </ul>
+                </div>
+                <h2 style="font-size:28px;line-height:1.3;margin:32px 0 16px;color:#0f172a;border-bottom:2px solid #e2e8f0;padding-bottom:8px;font-weight:700;">The Enduring Appeal of Tailored Fluid Trousers</h2>
+                <p>Trouser trends come and go, but the pleated high-rise pant maintains an unmatched status in transitional fashion. When balanced with relaxed denim, clean outerwear, or sleek knitwear, it proves you don't need complicated pieces to make an unforgettable style statement.</p>`
             },
             {
-                slug: "casual-cargo-pants-streetwear-guide",
-                title: "How to Style Relaxed Cargo Pants for a Modern Elevated Look",
-                category: "Streetwear",
-                date: "October 2026",
-                img: "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80",
-                desc: "Upgrade utilitarian streetwear with tailored cuts, minimalist neutral palettes, and statement boots."
+                id: "relaxed-cargo-pants-streetwear-guide",
+                title: "How to Style Relaxed Cargo Pants for an Elevated Downtown Look",
+                date: "October 12, 2026",
+                image: "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1200&q=80",
+                category: "Cargo Pants",
+                readTime: "7 min read",
+                likes: "920",
+                excerpt: "Cargos are back and sleeker than ever! 🌟 Move beyond basic utilitarian streetwear with structured neutral tones, minimalist pocket placements, and feminine styling contrasts.\n\n• Style earthy olive cargos with a fitted ribbed tank and chunky lug-sole boots.\n• Throw an oversized tailored blazer over your shoulders for smart-casual contrast.\n\nSave for later to upgrade your weekend casual looks! 🍂 #CargoPants #StreetStyle #UtilityPants #FallFashion",
+                content: `<p>Utilitarian aesthetics have reclaimed the spotlight with modern cargo silhouettes. Gone are the days of stiff, bulky fabrics—today's cargo pants feature fluid drapey twills, silk-cotton blends, and refined pockets that enhance rather than overwhelm.</p>
+                <div style="background:#f8fafc;border:1px solid #dbe4ee;border-radius:12px;padding:18px 20px;margin:24px 0;">
+                  <h3 style="margin-top:0;margin-bottom:12px;font-size:24px;line-height:1.4;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #C5A880;">Key Takeaways</h3>
+                  <ul style="margin:0;padding-left:20px;">
+                    <li>Opt for neutral tones: khaki, olive, mocha, and stone gray.</li>
+                    <li>Balance cargo utility with feminine tops like corset camis or baby tees.</li>
+                    <li>Structured ankle cuffs let you showcase statement sneakers or pointed boots.</li>
+                  </ul>
+                </div>`
             },
             {
-                slug: "tailored-office-slacks-smart-casual",
-                title: "Tailored Slacks: Transitioning from Boardroom to Evening Drinks",
-                category: "Smart Casual",
-                date: "October 2026",
-                img: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80",
-                desc: "The ultimate guide to structured high-rise trousers with blazers, crop knits, and comfortable loafers."
+                id: "tailored-office-slacks-smart-casual",
+                title: "Tailored Office Slacks: Transitioning from Desk to Dinner Effortlessly",
+                date: "October 10, 2026",
+                image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1200&q=80",
+                category: "Tailored Slacks",
+                readTime: "9 min read",
+                likes: "2.1k",
+                excerpt: "The 9-to-5 trouser has evolved into the supreme weekend staple! ✨ Discover how structured wool-blend trousers can instantly elevate your daily confidence.\n\n• Wear with an oversized poplin button-down and leather belt for board meetings.\n• Swap for a silk cami and gold jewelry when 6 PM rolls around.\n\nSave for workwear and evening capsule inspiration! 💼🥂 #WorkwearInspo #TailoredTrousers #OfficeOOTD",
+                content: `<p>A pair of immaculately tailored slacks is the unsung hero of any capsule wardrobe. Modern versions feature double-front pleats, deep slant pockets, and breathable wool-viscose blends designed for all-day comfort.</p>`
             }
         ];
 
-        function cleanTitleFromSlug(slug) {
-            if (!slug) return "Chic Everyday Women's Pants Outfit Guide";
-            return slug.split('-')
-                .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-                .join(' ');
+        let activeFilter = 'All';
+        let searchQuery = '';
+
+        function showToast(msg) {
+            const t = document.getElementById('toast');
+            t.innerText = msg;
+            t.classList.add('show');
+            setTimeout(() => t.classList.remove('show'), 2500);
         }
 
-        function showView(type, param) {
-            const app = document.getElementById('app');
+        function navigate(view, param) {
             window.scrollTo({ top: 0, behavior: 'smooth' });
-
-            if (type === 'home') {
+            if (view === 'home') {
                 history.pushState(null, '', window.location.pathname);
                 renderHome();
-            } else if (type === 'post') {
+            } else if (view === 'post') {
                 history.pushState(null, '', `?id=${param}`);
                 renderPost(param);
-            } else if (type === 'page') {
+            } else if (view === 'page') {
                 renderStaticPage(param);
             }
         }
 
+        function filterByCategory(cat) {
+            activeFilter = cat;
+            renderHome();
+        }
+
+        function handleSearch(val) {
+            searchQuery = val.toLowerCase();
+            renderHome();
+        }
+
         function renderHome() {
             const app = document.getElementById('app');
-            let cards = featuredCollections.map(p => `
-                <div class="grid-item" onclick="showView('post', '${p.slug}')">
-                    <img src="${p.img}" alt="${p.title}" loading="lazy">
-                    <div class="p-body">
-                        <span style="font-size: 0.75rem; color: var(--gold-dark); text-transform: uppercase; font-weight: 600;">${p.category}</span>
-                        <h4>${p.title}</h4>
-                        <p style="font-size: 0.88rem; color: var(--text-secondary); margin: 0;">${p.desc}</p>
+            const categories = ['All', 'Wide-Leg Trousers', 'Cargo Pants', 'Tailored Slacks'];
+
+            let filtered = posts.filter(p => {
+                const matchCat = (activeFilter === 'All' || p.category === activeFilter);
+                const matchSearch = p.title.toLowerCase().includes(searchQuery) || p.excerpt.toLowerCase().includes(searchQuery);
+                return matchCat && matchSearch;
+            });
+
+            let pillsHtml = categories.map(c => 
+                `<button class="cat-pill ${activeFilter === c ? 'active' : ''}" onclick="filterByCategory('${c}')">${c}</button>`
+            ).join('');
+
+            let cardsHtml = filtered.map(p => `
+                <article class="post-card" onclick="navigate('post', '${p.id}')">
+                    <div class="post-header">
+                        <div class="author-info">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" class="avatar" alt="Author">
+                            <div class="author-text">
+                                <span class="username">@PantStyleUS</span>
+                                <span class="post-meta-sub">${p.date} · ${p.readTime}</span>
+                            </div>
+                        </div>
+                        <span class="category-tag-badge">${p.category}</span>
                     </div>
-                </div>
+
+                    <div class="image-wrapper">
+                        <img src="${p.image}" class="post-image" alt="${p.title}" loading="lazy">
+                    </div>
+
+                    <div class="post-content">
+                        <h2>${p.title}</h2>
+                        <p class="excerpt-text">${p.excerpt}</p>
+                    </div>
+
+                    <div class="post-footer">
+                        <span>Read styling guide →</span>
+                        <div class="post-actions" onclick="event.stopPropagation()">
+                            <button class="action-btn" onclick="this.classList.toggle('liked'); showToast('Saved reaction!')">❤️ <span>${p.likes}</span></button>
+                            <button class="action-btn" onclick="showToast('Saved to your board!')">🔖 Save</button>
+                            <button class="action-btn" onclick="navigator.clipboard.writeText(window.location.origin + '/?id=${p.id}'); showToast('Link copied to clipboard!')">↗️ Share</button>
+                        </div>
+                    </div>
+                </article>
             `).join('');
 
             app.innerHTML = `
-                <div class="card" style="text-align: center;">
-                    <h2 style="font-size: 2.2rem; margin-top: 0;">Curated Women's Pants Lookbook</h2>
-                    <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto 20px;">Explore timeless styling formulas, seasonal trouser silhouettes, and masterclasses in everyday wardrobe proportion.</p>
+                <div class="filter-wrapper">
+                    <div class="category-pills">${pillsHtml}</div>
+                    <div class="search-box">
+                        <span class="search-icon">🔍</span>
+                        <input type="text" placeholder="Search trousers, wide-leg, streetwear..." value="${searchQuery}" oninput="handleSearch(this.value)">
+                    </div>
                 </div>
-                <h3 style="font-size: 1.6rem; margin-bottom: 15px;">Trending Outfit Inspirations</h3>
-                <div class="grid-posts">${cards}</div>
+
+                ${cardsHtml || '<div style="text-align:center; padding: 40px; color: var(--text-muted);">No outfit guides found matching your search.</div>'}
+
+                <div class="newsletter-card">
+                    <h3>Join Our Style Circle</h3>
+                    <p>Get exclusive trouser styling formulas, capsule wardrobe edits, and transitional street style alerts straight to your inbox.</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Enter your email address...">
+                        <button onclick="showToast('Thank you for subscribing!')">Subscribe</button>
+                    </div>
+                </div>
             `;
         }
 
         function renderPost(slug) {
             const app = document.getElementById('app');
-            const title = cleanTitleFromSlug(slug);
-            const found = featuredCollections.find(p => p.slug === slug);
-            const banner = found ? found.img : "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=900&q=80";
+            let post = posts.find(p => p.id === slug);
+
+            // Dynamic fallback for Pinterest pins with dynamic titles
+            if (!post) {
+                const cleanTitle = slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+                post = {
+                    id: slug,
+                    title: cleanTitle,
+                    date: "Today's Edit",
+                    category: "Women's Outfits",
+                    readTime: "7 min read",
+                    image: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=1200&q=80",
+                    excerpt: `Curated styling guide and inspiration for ${cleanTitle}. Discover how to style modern pants and trousers effortlessly with balanced layering.`,
+                    content: `
+                        <p>Modern fashion has proven that a well-crafted pair of pants forms the undisputed foundation of every impactful outfit. Styling ${cleanTitle} with intentional volume, thoughtful layering, and balanced accessories creates an effortlessly refined look.</p>
+                        <div style="background:#f8fafc;border:1px solid #dbe4ee;border-radius:12px;padding:18px 20px;margin:24px 0;">
+                            <h3 style="margin-top:0;margin-bottom:12px;font-size:24px;line-height:1.4;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #C5A880;">Key Styling Takeaways</h3>
+                            <ul style="margin:0;padding-left:20px;line-height:1.8;">
+                                <li><strong>Volume Balance:</strong> When styling relaxed bottoms, pair with cropped or fitted tops.</li>
+                                <li><strong>Waistline Definition:</strong> High-rise cuts elongate vertical lines for effortless height.</li>
+                                <li><strong>Footwear Impact:</strong> Chunky sneakers add downtown grit, while sleek loafers preserve elegance.</li>
+                            </ul>
+                        </div>
+                    `
+                };
+            }
 
             app.innerHTML = `
-                <article class="card">
-                    <div class="post-meta">
-                        <span>Pants & Trousers</span>
-                        <span>⏱️ 5 min read</span>
-                        <span>✨ Trending Edit</span>
+                <div class="breadcrumb">
+                    <a onclick="navigate('home')">Home</a> <span>/</span>
+                    <span>${post.category}</span> <span>/</span>
+                    <span>${post.title}</span>
+                </div>
+
+                <a class="back-button" onclick="navigate('home')">← Back to all outfit guides</a>
+
+                <article class="single-post">
+                    <div class="post-header">
+                        <div class="author-info">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" class="avatar" alt="Author">
+                            <div class="author-text">
+                                <span class="username">@PantStyleUS</span>
+                                <span class="post-meta-sub">${post.date} · ${post.readTime}</span>
+                            </div>
+                        </div>
+                        <span class="category-tag-badge">${post.category}</span>
                     </div>
 
-                    <h1 style="font-size: 2.4rem; line-height: 1.25; margin-bottom: 20px;">${title}</h1>
-                    <img src="${banner}" alt="${title}" class="hero-banner">
-
-                    <p>Modern fashion has proven that a well-crafted pair of trousers forms the undisputed foundation of every impactful outfit. Whether navigating brisk morning errands or curating an elevated evening statement, styling your pants with intentional volume, thoughtful layering, and balanced accessories creates an effortlessly refined look.</p>
-
-                    <div class="takeaways-box">
-                        <h3>Key Styling Takeaways</h3>
-                        <ul style="margin: 0; padding-left: 20px; line-height: 1.8;">
-                            <li><strong>Volume Balance:</strong> When styling loose or wide-leg trousers, maintain equilibrium by choosing fitted or cropped tops.</li>
-                            <li><strong>Waist Definition:</strong> High-rise waistlines anchor the silhouette and elongate your vertical line.</li>
-                            <li><strong>Shoe Harmony:</strong> Pointed-toe booties, retro sneakers, or minimal slide loafers immediately dictate the mood.</li>
-                            <li><strong>Color Palette:</strong> Neutral hues like ivory, espresso, charcoal, and warm camel offer maximum versatility.</li>
-                        </ul>
+                    <div class="image-wrapper">
+                        <img src="${post.image}" class="post-image" alt="${post.title}">
                     </div>
 
-                    <h2>1. Mastering Proportions & Silhouette</h2>
-                    <p>The secret to modern street style lies in contrast. Voluminous, fluid fabrics break gracefully over chunky platform sneakers or tailored heels, creating an elongated line that flatters without feeling restrictive.</p>
-
-                    <div class="highlight-quote">
-                        "Elegance is not about being noticed, it's about being remembered. A great pair of tailored trousers speaks with quiet confidence."
+                    <div class="post-content">
+                        <h1 class="single-post-title">${post.title}</h1>
+                        <p class="excerpt-text" style="font-weight: 500; font-size: 1.1rem; color: var(--text-primary);">${post.excerpt}</p>
+                        ${post.content}
                     </div>
 
-                    <h2>2. Layering for Effortless Versatility</h2>
-                    <p>Transition from daylight brunch to late dinners seamlessly by introducing adaptable outerwear. Layering an oversized blazer, cropped utility jacket, or relaxed trench coat elevates casual pants into an intentional fashion statement.</p>
-
-                    <div class="pro-tip">
-                        <strong>💡 Stylist Pro Tip:</strong> Always pay attention to the hem break. A slight puddle hem creates a relaxed downtown aesthetic, while a clean ankle crop keeps office looks sharp.
-                    </div>
-
-                    <div class="cta-box">
-                        <h3>Looking for More Outfit Formulas?</h3>
-                        <p>Save this idea to your Pinterest board and explore our curated styling library.</p>
-                        <a onclick="showView('home')" class="cta-btn">Explore More Outfits</a>
+                    <div class="share-bar">
+                        <span class="share-prompt">Curated this look? Share with friends:</span>
+                        <div class="share-buttons">
+                            <button class="share-pill" onclick="showToast('Saved to Pinterest!')">📌 Save Pin</button>
+                            <button class="share-pill" onclick="navigator.clipboard.writeText(window.location.href); showToast('Link copied!')">🔗 Copy Link</button>
+                        </div>
                     </div>
                 </article>
+
+                <div class="newsletter-card">
+                    <h3>Never Miss a Trend</h3>
+                    <p>Receive fresh weekly trousers and streetwear moodboards directly in your inbox.</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Your best email...">
+                        <button onclick="showToast('Subscribed successfully!')">Get Updates</button>
+                    </div>
+                </div>
             `;
         }
 
         function renderStaticPage(page) {
             const app = document.getElementById('app');
-            let content = '';
+            let title = '', body = '';
 
             if (page === 'about') {
-                content = `
-                    <h1>About Pant Fashion US</h1>
-                    <p>Welcome to Pant Fashion US! We are an editorial fashion discovery hub dedicated to helping modern women curate versatile, elegant, and timeless outfits centered around trousers, denim, and pants.</p>
-                    <p>Our mission is to celebrate personal style through thoughtful proportion, wearable luxury, and effortless daily inspiration.</p>
-                `;
+                title = 'About Women Pants Outfit';
+                body = '<p>Welcome to Women Pants Outfit! We are an editorial street style and fashion curation collective dedicated to celebrating timeless silhouette mastery, modern trousers, and effortless daily outfit formulas.</p>';
             } else if (page === 'privacy') {
-                content = `
-                    <h1>Privacy Policy</h1>
-                    <p>At Pant Fashion US, we respect your privacy. We do not sell or trade personal information to third parties. Our website collects non-personally identifiable analytical data strictly to optimize user browsing experience.</p>
-                    <p>Third-party partners and analytics may use standard cookies to analyze trends and visitor interactions.</p>
-                `;
+                title = 'Privacy Policy';
+                body = '<p>At Women Pants Outfit, your privacy is paramount. We do not sell or collect unauthorized personal user data. Standard non-identifying cookies may be used solely to personalize reading experiences.</p>';
             } else if (page === 'terms') {
-                content = `
-                    <h1>Terms of Service</h1>
-                    <p>By accessing Pant Fashion US, you agree to our terms and conditions. All content, imagery curation, and editorial styling advice provided on this website are for informational and inspirational purposes only.</p>
-                `;
+                title = 'Terms of Service';
+                body = '<p>All content, lookbooks, and styling edits published on this platform are curated for inspirational and informational purposes.</p>';
             } else if (page === 'contact') {
-                content = `
-                    <h1>Contact Us</h1>
-                    <p>Have questions, styling suggestions, or partnership inquiries? We'd love to hear from you!</p>
-                    <p><strong>Email:</strong> contact@pantfashionus.com</p>
-                    <p><strong>Location:</strong> New York, NY - United States</p>
-                `;
+                title = 'Contact Our Editorial Desk';
+                body = '<p>Have questions or styling collaborations? Reach out at <strong>editorial@pantfashionus.com</strong>.</p>';
             }
 
-            app.innerHTML = `<div class="card">${content}</div>`;
+            app.innerHTML = `
+                <div class="breadcrumb"><a onclick="navigate('home')">Home</a> <span>/</span> <span>${title}</span></div>
+                <a class="back-button" onclick="navigate('home')">← Back to Home</a>
+                <article class="single-post" style="padding: 40px 32px;">
+                    <h1 class="single-post-title">${title}</h1>
+                    ${body}
+                </article>
+            `;
         }
 
-        // Reading Progress
         window.addEventListener('scroll', () => {
             const h = document.documentElement.scrollHeight - document.documentElement.clientHeight;
             const scrolled = (window.scrollY / h) * 100;
             document.getElementById('progress-bar').style.width = scrolled + '%';
         });
 
-        // Initialize from URL
         window.addEventListener('DOMContentLoaded', () => {
             const params = new URLSearchParams(window.location.search);
             const id = params.get('id');
